@@ -224,7 +224,7 @@
                 <div  class="form">
                     <form id="manageform"> 
                         <p class="contact"><label for="enum">Teacher Name</label></p> 
-                        <select id="tname" class="form-control" onChange="UpdateInfo()">
+                        <select id="tname" class="select-style gender" onChange="UpdateInfo()">
                             <option value="Teacher 1">Teacher 1</option>
                             <option value="Teacher 2">Teacher 2</option>
                             <option value="Teacher 3">Teacher 3</option>
@@ -232,15 +232,26 @@
                             <option value="Teacher 5">Teacher 5</option>
                         </select>
 
-                        <p id="enum" class="contact"><label for="enum">Employee Number</label></p> 
+                        <p id="tpad" class="tpad"><label for="enum">Employee Number</label></p> 
                         <input id="enumber" name="enum" placeholder="Teacher 1's Employee #" type="text" disabled> 
 
-                        <p  class="contact"><label for="estat">Employment Status</label></p> 
-                        <input name="estat" placeholder="Employment Status" type="text"> 
+                        <label id="exp" for="estat">Employment Status</label>
+                        <label for="rank">Rank</label>
+                        <select id="expbox" class="select-style gender" >
+                            <option value="casual">Casual</option>
+                            <option value="regular">Regular</option>
+                        </select>
 
-                        <label id="exp" for="expertise">Expertise</label> 
+                        <select id="years" class="select-style gender" >
+                            <option value="casual">Dr.</option>
+                            <option value="regular">Prof.</option>
+                            <option value="casual">Blah</option>
+                            <option value="regular">Blah</option>
+                        </select>
+
+                        <label id="exp" class="tpad" for="expertise">Expertise</label> 
                         <label for="nyears">No. of Years</label>
-                        <input id="expertise" name="expertise" placeholder="Expertise" type="text"> 
+                        <input id="expbox" name="expertise" placeholder="Expertise" type="text"> 
 
                         <input id="years" name="years" placeholder="# of years" type="number"> 
 

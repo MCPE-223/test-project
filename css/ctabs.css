@@ -18,7 +18,7 @@
   -webkit-padding-end: 20px;
   -webkit-padding-start: 2px;
   -webkit-user-select: none;
-  background-image: url(images/select-arrow.png), 
+  background-image: url(../img/select-arrow.png), 
     -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
   background-position: center right;
   background-repeat: no-repeat;
@@ -39,23 +39,25 @@
 
 #exp
 {
-  padding-bottom: 10px;
-  padding-right: 195px;
+  padding-bottom: 5px;
+  width: 250px;
 }
 
-#expertise
+#expbox
 {
   width: 250px;
+  display: inline;
 }
 
 #years
 {
   width: 110px;
+  display: inline;
 }
 
-#enum
+.tpad
 {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 #tname
