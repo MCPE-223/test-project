@@ -127,17 +127,24 @@ label{
 }
 #option a{
 	-webkit-font-smoothing: antialiased;
-	color:#6c5B6d;
+	color:#ffffff;
 	/*text-shadow:0 -1px 0 #000;*/
 	font-size:12px;
 	display:block;
 	float:right;
 	margin:26px 10px;
+	text-decoration: none;
 }
 
 input{padding-left:40px;}
 #block:active > #block:before{
 	background-position:100px 100px;
+}
+
+#usercred, #passcred
+{
+	color: #fff;
+	margin-right: 500px;
 }
 
 /* placeholder */
