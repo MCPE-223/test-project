@@ -183,9 +183,9 @@
                                 <i class="fa fa-angle-down pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                              <li><a href="../pages/croom.html"><i class="fa fa-angle-double-right"></i> Create Room</a></li>
-                              <li><a href="../pages/cdp.html"><i class="fa fa-angle-double-right"></i> Customize Day/Period</a></li>
-                              <li><a href="../pages/csched.html"><i class="fa fa-angle-double-right"></i> Create Schedule</a></li>
+                              <li><a href="croom.html"><i class="fa fa-angle-double-right"></i> Create Room</a></li>
+                              <!-- <li><a href="cdp.html"><i class="fa fa-angle-double-right"></i> Customize Day/Period</a></li> -->
+                              <li><a href="csched.html"><i class="fa fa-angle-double-right"></i> Create Schedule</a></li>
                             </ul>
                         </li>
                         <li>
@@ -222,7 +222,7 @@
                 <!-- Main content -->
                 <section class="content">
                 <div  class="form">
-                    <form id="manageform"> 
+                    <form id="manageform" method="post"> 
                         <p class="contact"><label for="enum">Teacher Name</label></p> 
                         <select id="tname" class="select-style gender" onChange="UpdateInfo()">
                             <option value="Teacher 1">Teacher 1</option>
@@ -238,8 +238,9 @@
                         <label id="exp" for="estat">Employment Status</label>
                         <label for="rank">Rank</label>
                         <select id="expbox" class="select-style gender" >
-                            <option value="casual">Casual</option>
-                            <option value="regular">Regular</option>
+                            <option value="permanent">Permanent</option>
+                            <option value="non-permanent">Non-permanent</option>
+                            <option value="part-time">Part-time</option>
                         </select>
 
                         <select id="years" class="select-style gender" >
@@ -257,7 +258,7 @@
                             <option value="Subject 3">Subject 3</option>
                         </select>
 
-                        <input id="years" name="years" placeholder="# of years" type="number"> 
+                        <input id="years" name="years" placeholder="# of years" type="text"> 
 
 
                         <button type="button" class="btn btn-info" onClick="addRow(this)">+</button>
